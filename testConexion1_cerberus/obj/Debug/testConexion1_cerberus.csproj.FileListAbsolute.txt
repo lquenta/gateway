@@ -1,0 +1,6 @@
+c:\users\usrgateway\documents\visual studio 2012\Projects\testConexion1_cerberus\testConexion1_cerberus\bin\Debug\testConexion1_cerberus.exe.config
+C:\Users\usrgateway\Documents\Visual Studio 2012\Projects\testConexion1_cerberus\testConexion1_cerberus\obj\Debug\testConexion1_cerberus.csprojResolveAssemblyReference.cache
+C:\Users\usrgateway\Documents\Visual Studio 2012\Projects\testConexion1_cerberus\testConexion1_cerberus\bin\Debug\testConexion1_cerberus.exe
+C:\Users\usrgateway\Documents\Visual Studio 2012\Projects\testConexion1_cerberus\testConexion1_cerberus\bin\Debug\testConexion1_cerberus.pdb
+C:\Users\usrgateway\Documents\Visual Studio 2012\Projects\testConexion1_cerberus\testConexion1_cerberus\obj\Debug\testConexion1_cerberus.exe
+C:\Users\usrgateway\Documents\Visual Studio 2012\Projects\testConexion1_cerberus\testConexion1_cerberus\obj\Debug\testConexion1_cerberus.pdb

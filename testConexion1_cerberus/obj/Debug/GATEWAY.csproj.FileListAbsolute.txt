@@ -1,0 +1,12 @@
+C:\Users\usrgateway\documents\visual studio 2012\Projects\testConexion1_cerberus\testConexion1_cerberus\bin\Debug\testConexion1_cerberus.exe.config
+C:\Users\usrgateway\documents\visual studio 2012\Projects\testConexion1_cerberus\testConexion1_cerberus\obj\Debug\testConexion1_cerberus.exe
+C:\Users\usrgateway\documents\visual studio 2012\Projects\testConexion1_cerberus\testConexion1_cerberus\obj\Debug\testConexion1_cerberus.pdb
+C:\Users\usrgateway\documents\visual studio 2012\Projects\testConexion1_cerberus\testConexion1_cerberus\bin\Debug\testConexion1_cerberus.exe
+C:\Users\usrgateway\documents\visual studio 2012\Projects\testConexion1_cerberus\testConexion1_cerberus\bin\Debug\testConexion1_cerberus.pdb
+C:\Users\usrgateway\documents\visual studio 2012\Projects\testConexion1_cerberus\testConexion1_cerberus\obj\Debug\GATEWAY.csprojResolveAssemblyReference.cache
+C:\Users\lquenta\Downloads\testConexion1_cerberus\testConexion1_cerberus\testConexion1_cerberus\bin\Debug\testConexion1_cerberus.exe.config
+C:\Users\lquenta\Downloads\testConexion1_cerberus\testConexion1_cerberus\testConexion1_cerberus\obj\Debug\testConexion1_cerberus.exe
+C:\Users\lquenta\Downloads\testConexion1_cerberus\testConexion1_cerberus\testConexion1_cerberus\obj\Debug\testConexion1_cerberus.pdb
+C:\Users\lquenta\Downloads\testConexion1_cerberus\testConexion1_cerberus\testConexion1_cerberus\bin\Debug\testConexion1_cerberus.exe
+C:\Users\lquenta\Downloads\testConexion1_cerberus\testConexion1_cerberus\testConexion1_cerberus\bin\Debug\testConexion1_cerberus.pdb
+C:\Users\lquenta\Downloads\testConexion1_cerberus\testConexion1_cerberus\testConexion1_cerberus\obj\Debug\GATEWAY.csprojResolveAssemblyReference.cache
