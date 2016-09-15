@@ -31,7 +31,7 @@ namespace testConexion1_cerberus
                 mstrMessage = Encoding.ASCII.GetString(bytesRecibidos, 0, bytesRecibidos.Length);
                 Console.WriteLine(Convert.ToBase64String(bytesRecibidos));
                 byte[] longitud = new byte[] { bytesRecibidos[0], bytesRecibidos[1] };
-                byte[] longitudSalida = new byte[] { 0, 63 };
+                byte[] longitudSalida = new byte[] { 0, 61 };
                 byte[] transaccionFinanciera = new byte[] { bytesRecibidos[2]};
                 byte[] destinoNII = new byte[] { bytesRecibidos[3], bytesRecibidos[4] };
                 byte[] origen = new byte[] { bytesRecibidos[5], bytesRecibidos[6] };
@@ -206,7 +206,7 @@ namespace testConexion1_cerberus
                 responsePurchase = clienteBisa.purchasePOSATC(requestPurchase);
                 respuesta.code = responsePurchase.code;
                 respuesta.cardNumber = responsePurchase.cardNumber;
-                respuesta.expiration = responsePurchase.expiration.ToString("MMdd",System.Globalization.CultureInfo.InvariantCulture);
+                respuesta.expiration = responsePurchase.expiration.ToString("yyMM",System.Globalization.CultureInfo.InvariantCulture);
                 respuesta.referenceNumber = referenceNumber;
             }
             catch (Exception)

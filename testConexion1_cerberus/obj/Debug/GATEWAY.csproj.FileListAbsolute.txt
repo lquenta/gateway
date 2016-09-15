@@ -10,3 +10,9 @@ C:\Users\lquenta\Downloads\testConexion1_cerberus\testConexion1_cerberus\testCon
 C:\Users\lquenta\Downloads\testConexion1_cerberus\testConexion1_cerberus\testConexion1_cerberus\bin\Debug\testConexion1_cerberus.exe
 C:\Users\lquenta\Downloads\testConexion1_cerberus\testConexion1_cerberus\testConexion1_cerberus\bin\Debug\testConexion1_cerberus.pdb
 C:\Users\lquenta\Downloads\testConexion1_cerberus\testConexion1_cerberus\testConexion1_cerberus\obj\Debug\GATEWAY.csprojResolveAssemblyReference.cache
+C:\Users\lquenta\Source\Repos\gateway\testConexion1_cerberus\bin\Debug\testConexion1_cerberus.exe.config
+C:\Users\lquenta\Source\Repos\gateway\testConexion1_cerberus\obj\Debug\testConexion1_cerberus.exe
+C:\Users\lquenta\Source\Repos\gateway\testConexion1_cerberus\obj\Debug\testConexion1_cerberus.pdb
+C:\Users\lquenta\Source\Repos\gateway\testConexion1_cerberus\bin\Debug\testConexion1_cerberus.exe
+C:\Users\lquenta\Source\Repos\gateway\testConexion1_cerberus\bin\Debug\testConexion1_cerberus.pdb
+C:\Users\lquenta\Source\Repos\gateway\testConexion1_cerberus\obj\Debug\GATEWAY.csprojResolveAssemblyReference.cache
