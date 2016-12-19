@@ -1,11 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GATEWAY", "testConexion1_cerberus\GATEWAY.csproj", "{66131187-DC06-4436-B618-FC1499DDA6FB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestListenerTCP_cliente", "TestListenerTCP_cliente\TestListenerTCP_cliente.csproj", "{FB390612-B735-4F37-8B37-E9E960D19BAE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testConsola", "testConsola\testConsola.csproj", "{9A10E4D3-B0C1-4277-9588-6CBDCC7AB002}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SetupGATEWAY_ATC", "SetupGATEWAY_ATC\SetupGATEWAY_ATC.vdproj", "{3FB4AF80-42AF-4B95-B9D2-8DEB7C66EC2E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsService1", "WindowsService1\WindowsService1.csproj", "{D5C88EB2-CACA-49CF-BF4D-DC8A23A42E7E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +31,12 @@ Global
 		{9A10E4D3-B0C1-4277-9588-6CBDCC7AB002}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9A10E4D3-B0C1-4277-9588-6CBDCC7AB002}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9A10E4D3-B0C1-4277-9588-6CBDCC7AB002}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FB4AF80-42AF-4B95-B9D2-8DEB7C66EC2E}.Debug|Any CPU.ActiveCfg = Debug
+		{3FB4AF80-42AF-4B95-B9D2-8DEB7C66EC2E}.Release|Any CPU.ActiveCfg = Release
+		{D5C88EB2-CACA-49CF-BF4D-DC8A23A42E7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5C88EB2-CACA-49CF-BF4D-DC8A23A42E7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5C88EB2-CACA-49CF-BF4D-DC8A23A42E7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5C88EB2-CACA-49CF-BF4D-DC8A23A42E7E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

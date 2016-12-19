@@ -1,0 +1,6 @@
+C:\Users\lquenta\Source\Repos\gateway\WindowsService1\bin\Debug\WindowsService1.exe.config
+C:\Users\lquenta\Source\Repos\gateway\WindowsService1\bin\Debug\WindowsService1.exe
+C:\Users\lquenta\Source\Repos\gateway\WindowsService1\bin\Debug\WindowsService1.pdb
+C:\Users\lquenta\Source\Repos\gateway\WindowsService1\obj\Debug\WindowsService1.csprojResolveAssemblyReference.cache
+C:\Users\lquenta\Source\Repos\gateway\WindowsService1\obj\Debug\WindowsService1.exe
+C:\Users\lquenta\Source\Repos\gateway\WindowsService1\obj\Debug\WindowsService1.pdb

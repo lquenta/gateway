@@ -1,0 +1,2 @@
+﻿installutil /ServiceName=Service1Test <SERVICE_FOLDER_PATH>\Service1Test.exe
+installutil /u /ServiceName=Service1Test <SERVICE_FOLDER_PATH>\Service1Test.exe

@@ -50,31 +50,35 @@ namespace testConexion1_cerberus
                 decimal montoDecimal = Decimal.Parse(monto) / 100;
                 string currency = mstrMessage.Substring(69, 1);
                 string commerce = mstrMessage.Substring(70, 6);
+                byte[] reference_number = numTerminal.Concat(fecha).ToArray().Concat(hora).ToArray().Concat(sysTraceNumber).ToArray();
+                string str_reference_number = Encoding.ASCII.GetString(reference_number);
                 Console.WriteLine("numero celular:" + numeroCelular);
                 Console.WriteLine("Clave movil:" + claveMovil);
                 Console.WriteLine("monto:" + montoDecimal.ToString());
                 Console.WriteLine("moneda:" + currency);
                 Console.WriteLine("commerce:" + commerce);
+                Console.WriteLine("str_reference_number" + str_reference_number);
                 Console.WriteLine("Enviando a BISA...");
-                Program.RespuestaServicioBISA respuestaBisa = Program.LLamarServicioBisa(montoDecimal, commerce, currency, numeroCelular, claveMovil);
+                Program.RespuestaServicioBISA respuestaBisa = Program.LLamarServicioBisa(montoDecimal, commerce, currency, numeroCelular, claveMovil, str_reference_number);
                 /*Program.RespuestaServicioBISA respuestaBisa = new Program.RespuestaServicioBISA();
                 respuestaBisa.code = "00";
                 respuestaBisa.cardNumber = "1234567890123456";
-                respuestaBisa.expiration = "9922";
+                respuestaBisa.expiration = "9922";*/
                 Console.WriteLine("Codigo de respuesta:" + respuestaBisa.code);
                 Console.WriteLine("Card Number:" + respuestaBisa.cardNumber);
                 Console.WriteLine("ExpirationDate:" + respuestaBisa.expiration);
                 Console.WriteLine(".....Fin de mensaje.....");
-                Console.WriteLine("Armado de trama de respuesta");*/
+                Console.WriteLine("Armado de trama de respuesta");
 
-                string header =mstrMessage.Substring(1, 39);
-                string tramaNumeroTarjeta = (respuestaBisa.cardNumber == null)?"0".PadLeft(16,'0'):respuestaBisa.cardNumber;
+                string header = mstrMessage.Substring(1, 39);
+                string tramaNumeroTarjeta = (respuestaBisa.cardNumber == null) ? "0".PadLeft(16, '0') : respuestaBisa.cardNumber;
                 string tramaFechaVencimiento = (respuestaBisa.expiration == null) ? "0000" : respuestaBisa.expiration;
                 string tramaCodigoRespuesta = respuestaBisa.code.PadLeft(2, '0');
-                
-                tramaFinal = longitudSalida.Concat(transaccionFinanciera).ToArray().Concat(destinoNII).ToArray().Concat(origen).ToArray().Concat(MTIrespuesta).ToArray().Concat(bitmap).ToArray().Concat(longde63_envio).ToArray().Concat(numTerminal).ToArray().Concat(fecha).ToArray().Concat(hora).ToArray().Concat(sysTraceNumber).ToArray();
 
-                string tramaEnvio =  tramaNumeroTarjeta + tramaFechaVencimiento + tramaCodigoRespuesta;
+                //tramaFinal = longitudSalida.Concat(transaccionFinanciera).ToArray().Concat(destinoNII).ToArray().Concat(origen).ToArray().Concat(MTIrespuesta).ToArray().Concat(bitmap).ToArray().Concat(longde63_envio).ToArray().Concat(numTerminal).ToArray().Concat(fecha).ToArray().Concat(hora).ToArray().Concat(sysTraceNumber).ToArray();
+                tramaFinal = longitudSalida.Concat(transaccionFinanciera).ToArray().Concat(origen).ToArray().Concat(destinoNII).ToArray().Concat(MTIrespuesta).ToArray().Concat(bitmap).ToArray().Concat(longde63_envio).ToArray().Concat(numTerminal).ToArray().Concat(fecha).ToArray().Concat(hora).ToArray().Concat(sysTraceNumber).ToArray();
+                //tramaFinal = tramaFinal.Concat(new byte[] {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}).ToArray();
+                string tramaEnvio = tramaNumeroTarjeta + tramaFechaVencimiento + tramaCodigoRespuesta;
                 Console.WriteLine("Trama armada:" + tramaEnvio);
                 mstrResponse = tramaEnvio;
             }
@@ -177,7 +181,7 @@ namespace testConexion1_cerberus
             }
             return s;
         }
-        public static RespuestaServicioBISA LLamarServicioBisa(decimal amount, string commerce, string currency, string movilNumber, string smsPIN)
+        public static RespuestaServicioBISA LLamarServicioBisa(decimal amount, string commerce, string currency, string movilNumber, string smsPIN, string str_reference_number)
         {
             RespuestaServicioBISA respuesta = new RespuestaServicioBISA();
             ServicePointManager.ServerCertificateValidationCallback =
@@ -189,10 +193,10 @@ namespace testConexion1_cerberus
             BISAService.aquaClient clienteBisa = new BISAService.aquaClient();
             clienteBisa.ClientCredentials.UserName.UserName = System.Configuration.ConfigurationManager.AppSettings["usuarioBISA_SOAP"];
             clienteBisa.ClientCredentials.UserName.Password = System.Configuration.ConfigurationManager.AppSettings["passwordBISA_SOAP"];
-            Random rnd=new Random();
-            string numeroAleatorio=RandomDigits(16);
-            string referenceNumber = commerce + numeroAleatorio; //16 pos
-            requestPurchase.amount = amount; 
+            Random rnd = new Random();
+            string numeroAleatorio = RandomDigits(16);
+            string referenceNumber = str_reference_number; //16 pos
+            requestPurchase.amount = amount;
             requestPurchase.commerce = commerce;
             requestPurchase.currency = currency;
             requestPurchase.movilNumber = movilNumber;
