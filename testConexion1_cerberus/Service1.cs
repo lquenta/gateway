@@ -74,7 +74,11 @@ namespace GATEWAY
         static string output = "";
         public void IniciarListenerINAC()
         {
-            string sSource = "GatewayATC_LOG";
+            string sSource = "Aplicacion";
+            if (!System.Diagnostics.EventLog.SourceExists(sSource))
+            {
+                System.Diagnostics.EventLog.CreateEventSource(sSource, sSource);
+            }
             EventLog.WriteEntry(sSource, "Gateway Iniciado");
 
             TcpListener tcpListener = null;
@@ -189,7 +193,7 @@ namespace GATEWAY
         byte[] bytesSent;
         public void processMsg(TcpClient client, NetworkStream stream, byte[] bytesRecibidos)
         {
-            string sSource = "GatewayATC_LOG";
+            string sSource = "Aplicacion";
             
             
             msClient = client;

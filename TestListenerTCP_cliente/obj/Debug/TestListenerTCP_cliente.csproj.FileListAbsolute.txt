@@ -4,3 +4,9 @@ C:\Users\usrgateway\documents\visual studio 2012\Projects\testConexion1_cerberus
 C:\Users\usrgateway\documents\visual studio 2012\Projects\testConexion1_cerberus\TestListenerTCP_cliente\obj\Debug\TestListenerTCP_cliente.exe
 C:\Users\usrgateway\documents\visual studio 2012\Projects\testConexion1_cerberus\TestListenerTCP_cliente\obj\Debug\TestListenerTCP_cliente.pdb
 C:\Users\usrgateway\documents\visual studio 2012\Projects\testConexion1_cerberus\TestListenerTCP_cliente\obj\Debug\TestListenerTCP_cliente.csprojResolveAssemblyReference.cache
+C:\Users\lquenta\Downloads\testConexion1_cerberus\testConexion1_cerberus\TestListenerTCP_cliente\bin\Debug\TestListenerTCP_cliente.exe.config
+C:\Users\lquenta\Downloads\testConexion1_cerberus\testConexion1_cerberus\TestListenerTCP_cliente\bin\Debug\TestListenerTCP_cliente.exe
+C:\Users\lquenta\Downloads\testConexion1_cerberus\testConexion1_cerberus\TestListenerTCP_cliente\bin\Debug\TestListenerTCP_cliente.pdb
+C:\Users\lquenta\Downloads\testConexion1_cerberus\testConexion1_cerberus\TestListenerTCP_cliente\obj\Debug\TestListenerTCP_cliente.csprojResolveAssemblyReference.cache
+C:\Users\lquenta\Downloads\testConexion1_cerberus\testConexion1_cerberus\TestListenerTCP_cliente\obj\Debug\TestListenerTCP_cliente.exe
+C:\Users\lquenta\Downloads\testConexion1_cerberus\testConexion1_cerberus\TestListenerTCP_cliente\obj\Debug\TestListenerTCP_cliente.pdb

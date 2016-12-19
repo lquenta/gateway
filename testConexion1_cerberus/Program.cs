@@ -90,20 +90,34 @@ namespace testConexion1_cerberus
     }
     class Program
     {
+       
         public const string serviceName = "gateway_atc_service";
         public class ServicioGateway : ServiceBase
         {
+            Thread Worker;
+            AutoResetEvent StopRequest = new AutoResetEvent(false);
             public ServicioGateway()
             {
                 ServiceName = Program.serviceName;
             }
             protected override void OnStart(string[] args)
             {
-                IniciarListenerINAC();
+                Worker = new Thread(DoWork);
+                
             }
             protected override void OnStop()
             {
-                base.OnStop();
+                StopRequest.Set();
+                Worker.Join();
+                //base.OnStop();
+            }
+            private void DoWork(object arg)
+            {
+                for (; ; )
+                {
+                    if (StopRequest.WaitOne(int.MaxValue)) return;
+                    IniciarListenerINAC();
+                }
             }
 
         }

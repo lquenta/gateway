@@ -3,3 +3,9 @@ C:\Users\usrgateway\documents\visual studio 2012\Projects\testConexion1_cerberus
 C:\Users\usrgateway\documents\visual studio 2012\Projects\testConexion1_cerberus\testConsola\bin\Debug\testConsola.pdb
 C:\Users\usrgateway\documents\visual studio 2012\Projects\testConexion1_cerberus\testConsola\obj\Debug\testConsola.exe
 C:\Users\usrgateway\documents\visual studio 2012\Projects\testConexion1_cerberus\testConsola\obj\Debug\testConsola.pdb
+C:\Users\lquenta\Downloads\testConexion1_cerberus\testConexion1_cerberus\testConsola\bin\Debug\testConsola.exe.config
+C:\Users\lquenta\Downloads\testConexion1_cerberus\testConexion1_cerberus\testConsola\bin\Debug\testConsola.exe
+C:\Users\lquenta\Downloads\testConexion1_cerberus\testConexion1_cerberus\testConsola\bin\Debug\testConsola.pdb
+C:\Users\lquenta\Downloads\testConexion1_cerberus\testConexion1_cerberus\testConsola\obj\Debug\testConsola.csprojResolveAssemblyReference.cache
+C:\Users\lquenta\Downloads\testConexion1_cerberus\testConexion1_cerberus\testConsola\obj\Debug\testConsola.exe
+C:\Users\lquenta\Downloads\testConexion1_cerberus\testConexion1_cerberus\testConsola\obj\Debug\testConsola.pdb

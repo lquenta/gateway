@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Net;
 using System.Net.Sockets;
@@ -36,49 +37,16 @@ namespace testConsola
         static string output = "";
         static void Main(string[] args)
         {
-            TcpListener tcpListener = null;
-            localhost_ip = Get_ip_local_address();
-            IPAddress ipAddress = IPAddress.Parse(localhost_ip);
-            //IPAddress ipAddress = Dns.GetHostEntry("localhost").AddressList[0];
-            try
+            string sSource = "GatewayATC_LOG";
+            if (!System.Diagnostics.EventLog.SourceExists(sSource))
             {
-                Console.WriteLine("Puerto:");
-                int port = Int32.Parse(Console.ReadLine());
-                tcpListener = new TcpListener(ipAddress, port);
-                tcpListener.Start();
-                output = ipAddress + "Esperando conexion en ..."  ;
-                Console.Write(output);
-            }
-            catch (Exception ex)
-            {
-                output = "Error:" + ex.ToString();
-                Console.WriteLine(output);
-            }
-            while (true)
-            {
-                Thread.Sleep(10);
-                TcpClient tcpClient = tcpListener.AcceptTcpClient();
-                byte[] bytes = new byte[256];
-                NetworkStream stream = tcpClient.GetStream();
-                Byte[] data = new Byte[256];
-                Int32 bytes23 = stream.Read(data, 0, data.Length);
-                string responseData = System.Text.Encoding.ASCII.GetString(data, 0, bytes23);
-                output = "Received: " + responseData;
-                Console.WriteLine(output);
-                Console.WriteLine("Escribir respuesta");
-                string mandarRespuesta = Console.ReadLine();
-
-
-                SocketHelper helper = new SocketHelper();
-                Console.WriteLine("escritura en stream");
-                helper.processMsg(tcpClient, stream, mandarRespuesta);
-                stream.Flush();
-                Console.ReadLine();
+                Console.Write("wirt");
                 
-
-
+                System.Diagnostics.EventLog.CreateEventSource(sSource, sSource);
             }
-
+            EventLog.WriteEntry("Aplicacion", "message");
+            EventLog.WriteEntry(sSource, "Gateway Iniciado");
+            Console.Read();
         }
 
     }
